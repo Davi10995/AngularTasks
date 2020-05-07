@@ -14,4 +14,17 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  // getName(event){
+  //   this.button.name = event.target.value;
+  // }
+  // getType(event){
+  //   this.button.type = event.target.value;
+  // }
+  // getLabel(event){
+  //   this.button.label = event.target.value;
+  // }
+  // getClass(event){
+  //   this.button.class = event.target.value;
+  // }
 }

@@ -1,15 +1,15 @@
     <table>
       <tr>
-        <td>Type: <input type="text" #type></td>
+        <td>Type<input type="text" #type class="form-control"></td>
       </tr>
       <tr>
-        <td>Name<input type="text"#name></td>
+        <td>Name<input type="text"#name class="form-control"></td>
       </tr>
       <tr>
-        <td>Label<input type="text" #label></td>
+        <td>Label<input type="text" #label class="form-control"></td>
       </tr>
       <tr>
-        <td>Classe<input type="text" #class></td>
+        <td>Class<input type="text" #styleClass class="form-control"></td>
       </tr>
-      <button type="button" (click)="buttonProperties(type.value, name.value, label.value, class.value)">Salva</button>
+      <button type="button" (click)="buttonProperties(type.value, name.value, label.value, styleClass.value)">Salva</button>
     </table>

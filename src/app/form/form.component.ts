@@ -7,7 +7,6 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  // @Output() button: new EventEmitter<{type: string, name: string, label: string, classe: string}>();
   @Output() button = new EventEmitter<{type: string, name: string, label: string, class: string}>();
   constructor() { }
 

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'primoTask';
   // For button
-  bottone = {type: 'input', name: 'nome', label: 'btn', class: 'pulsante'};
+  bottone = {type: 'input', name: 'nome', label: 'pulsante', class: 'btn'};
 
 
   getButton(event: {type: string, name: string, label: string, class: string}) {

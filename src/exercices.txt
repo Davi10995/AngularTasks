@@ -1,0 +1,7 @@
+1
+
+
+2 Il secondo task è sulla falsa riga del precedente.
+  Questa volta vogliamo creare un componente per una tabella. L'obiettivo è lo stesso di prima: generalizzare il componente . Vogliamo una
+  tabella che riceva da @Input un oggetto con i dati veri e propri e poi una configurazione. Questa configurazione deve contenere la descrizione
+  della struttura dati che riceverà in input. Esempio: data: [array di utenti] config: { headers: [ { label: 'nome', key: 'name' } ...... ]}
