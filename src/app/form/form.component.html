@@ -1,0 +1,15 @@
+    <table>
+      <tr>
+        <td>Type: <input type="text" #type></td>
+      </tr>
+      <tr>
+        <td>Name<input type="text"#name></td>
+      </tr>
+      <tr>
+        <td>Label<input type="text" #label></td>
+      </tr>
+      <tr>
+        <td>Classe<input type="text" #class></td>
+      </tr>
+      <button type="button" (click)="buttonProperties(type.value, name.value, label.value, class.value)">Salva</button>
+    </table>

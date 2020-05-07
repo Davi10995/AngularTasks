@@ -7,26 +7,50 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<h1>{{title}}</h1>
-<div align="center">
-  <form #form action="newFile.html">
-    <table>
-      <tr>
-        <td>Name: <input type="text" (input)="getName($event)"></td>
-      </tr>
-      <tr>
-        <td>Type<input type="text" (input)="getType($event)"></td>
-      </tr>
-      <tr>
-        <td>Label<input type="text" (input)="getLabel($event)"></td>
-      </tr>
-      <tr>
-        <td>Classe<input type="text" (input)="getClass($event)"></td>
-      </tr>
-    </table>
-    <button class="{{class}}" type="{{type}}" name="{{name}}">{{label}}</button>
-  </form>
+<div align="center" class="container">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div class="col-xl-12">
+      <app-form (button)="getButton($event)"></app-form>
+    </div>
+  </div>
 </div>
+<div align="center" class="container">
+  <div class="row">
+    <app-button [button]="bottone"></app-button>
+  </div>
+</div>
+<div class="container">
+  PROVA
+  <table>
+    <tr [(ngModel)]="bottone">
+      <td >{{bottone.type}}</td>
+      <td >{{bottone.name}}</td>
+      <td >{{bottone.label}}</td>
+      <td >{{bottone.class}}</td>
+    </tr>
+  </table>
+</div>
+<!--<h1>{{title}}</h1>-->
+<!--<div align="center">-->
+<!--  <form #form action="newFile.html">-->
+<!--    <table>-->
+<!--      <tr>-->
+<!--        <td>Name: <input type="text" (input)="getName($event)"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Type<input type="text" (input)="getType($event)"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Label<input type="text" (input)="getLabel($event)"></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td>Classe<input type="text" (input)="getClass($event)"></td>-->
+<!--      </tr>-->
+<!--    </table>-->
+<!--    <button class="{{class}}" type="{{type}}" name="{{name}}">{{label}}</button>-->
+<!--  </form>-->
+<!--</div>-->
 
 <!--<style>-->
 <!--  :host {-->
