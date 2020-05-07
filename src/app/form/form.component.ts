@@ -7,13 +7,13 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  @Output() button = new EventEmitter<{type: string, name: string, label: string, class: string}>();
+  @Output() button = new EventEmitter<{type: string, name: string, label: string, class: string, href: string}>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  buttonProperties(type, name, label, classe){
-    this.button.emit( {type, name, label, class: classe});
+  buttonProperties(type, name, label, classe, href){
+    this.button.emit( {type, name, label, class: classe, href});
   }
 }

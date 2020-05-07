@@ -11,5 +11,8 @@
       <tr>
         <td>Class<input type="text" #styleClass class="form-control"></td>
       </tr>
-      <button type="button" (click)="buttonProperties(type.value, name.value, label.value, styleClass.value)">Salva</button>
+      <tr>
+        <td>Href<input type="text" #href class="form-control"></td>
+      </tr>
+      <button type="button" (click)="buttonProperties(type.value, name.value, label.value, styleClass.value, href.value)">Salva</button>
     </table>

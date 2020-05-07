@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'primoTask';
   // For button
-  bottone = {type: 'input', name: 'nome', label: 'pulsante', class: 'btn'};
+  bottone = {type: 'input', name: 'nome', label: 'pulsante', class: 'btn', href: ''};
 
 
-  getButton(event: {type: string, name: string, label: string, class: string}) {
-    this.bottone = {type: event.type, name: event.name, label: event.label, class: event.class};
+  getButton(event: {type: string, name: string, label: string, class: string, href: string}) {
+    this.bottone = {type: event.type, name: event.name, label: event.label, class: event.class, href: event.href};
   }
 }
 
