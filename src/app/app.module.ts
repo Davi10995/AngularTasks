@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { ButtonComponent } from './button/button.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { UserTableComponent } from './user-table/user-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    ButtonComponent
+    ButtonComponent,
+    UserFormComponent,
+    UserTableComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<table align="center" border="1" cellpadding="5">
+<!--  Stampa header -->
+  <tr>
+    <th>{{header.nome}}</th>
+    <th>{{header.cognome}}</th>
+    <th>{{header.citta}}</th>
+    <th>{{header.username}}</th>
+  </tr>
+<!--  Stampa users tramite array ricevto in input-->
+  <tr *ngFor="let user of users">
+    <td>{{user.nome}}</td>
+    <td>{{user.cognome}}</td>
+    <td>{{user.citta}}</td>
+    <td>{{user.username}}</td>
+  </tr>
+</table>
