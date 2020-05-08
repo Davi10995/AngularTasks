@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Users} from '../app/users.model';
+import {Users} from './users.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +12,7 @@ export class AppComponent {
   bottone = {type: 'input', name: 'nome', label: '', class: 'btn', href: ''};
   // For Users
   users: Users[] = [];
+  header = [{key: 'nome', value: 'Nome'}, {key: 'cognome', value: 'Cognome'}, {key: 'citta', value: 'Città'}, {key: 'username', value: 'Username'}];
 
   // Ottiene i dati del bottone inseriti dall'utente nel form
   getButton(event: {type: string, name: string, label: string, class: string, href: string}) {

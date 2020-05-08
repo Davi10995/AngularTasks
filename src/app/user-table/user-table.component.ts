@@ -9,9 +9,9 @@ import {Users} from '../users.model';
 export class UserTableComponent implements OnInit {
   constructor() { }
 
-  @Input() users: Users[];
+  @Input() data;
   // Dichiarazione dei campi header della tabella Users
-  header = {nome: 'Nome', cognome: 'Cognome', citta: 'Città', username: 'Username'};
+  @Input() headers;
 
   ngOnInit(): void {
   }
