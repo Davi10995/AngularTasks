@@ -19,13 +19,13 @@
 <div align="center" class="container">
   <div class="row">
     <div class="col-xl-12">
-      <app-user-form (user)="getUser($event)"></app-user-form>
+      <app-user-form></app-user-form>
     </div>
   </div>
 </div>
 <div align="center" class="container" style="margin-bottom: 30px">
   <div style="margin-top: 30px">
-    <app-user-table [data]="users" [headers]="header"></app-user-table>
+    <app-user-table [headers]="header"></app-user-table>
   </div>
 </div>
 

@@ -6,7 +6,7 @@ import {FormsModule} from '@angular/forms';
 import { FormComponent } from './form/form.component';
 import { ButtonComponent } from './button/button.component';
 import { UserFormComponent } from './user-form/user-form.component';
-import { UserTableComponent } from './user-table/user-table.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { UserTableComponent } from './user-table/user-table.component';
     FormComponent,
     ButtonComponent,
     UserFormComponent,
-    UserTableComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
